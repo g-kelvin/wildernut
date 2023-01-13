@@ -31,7 +31,7 @@
 
 </head>
 
-<body>
+<body style="background-image: url('assets/img/doc.png'); background-repeat: no-repeat;   background-attachment: fixed;   background-size: cover;">
 
   <!-- ======= Header ======= -->
   <header id="header" class="fixed-top d-flex align-items-center">
@@ -48,9 +48,9 @@
       <!-- Uncomment below if you prefer to use an image logo -->
       <!-- <a href="index.html" class="logo me-auto"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
 
-     <nav id="navbar" class="navbar">
+      <nav id="navbar" class="navbar">
         <ul>
-          <li><a href="index.html" >Home</a></li>
+          <li><a href="index.html">Home</a></li>
           <li class="dropdown"><a href="#"><span>About</span> <i class="bi bi-chevron-down"></i></a>
             <ul>
               <li><a href="about.html" class="active">About Us</a></li>
@@ -58,9 +58,7 @@
             </ul>
           </li>
           <li><a href="buyersguide.html">Buyers Guide</a></li>
-
           <li><a href="contact.html">Contact</a></li>
-
         </ul>
         <i class="bi bi-list mobile-nav-toggle"></i>
       </nav><!-- .navbar -->
@@ -72,9 +70,10 @@
 
     <!-- ======= Breadcrumbs ======= -->
     <section id="breadcrumbs" class="breadcrumbs">
-      <div class="container"><br><br><br><br><br><br><br><br>  
+      <div class="container"><br><br><br><br><br><br><br><br>
 
-     <center>  <h1 style="color: white"><b> About Us</b></h1></center>  
+
+      <center>  <h1 style="color: white"><b> Message </b></h1></center>  
 
       </div>
     </section><!-- End Breadcrumbs -->
@@ -84,25 +83,39 @@
       <div class="container">
 
         <div class="row content">
-          <div class="col-lg-4">
-            <img src="assets/img/tree.jpg" width="400">
-          </div>
-          <div class="col-lg-8 pt-4 pt-lg-0">
-         <h3 style="color: #b12224; font-family: Cursive; ">About Us</h3>
-            <p style="text-align: justify;">
-              <b>Wildernuts’</b> journey begins in the heart of the macadamia rich regions of central Kenya, namely Kyeni in Embu county and Sagana in Kirinyaga county where our processing facility is located. <br><br>
+           <p> <?php 
+    if(!isset($_POST['submit'])){
+        $name = $_POST['name'];
+        $email = $_POST['email'];
+        $telephone = $_POST['telephone'];
+        $message = $_POST['message']; 
 
-               Jacob, one of the founders was born and brought up in Kyeni, where he watched his parents and relatives tend tirelessly to their macadamia trees but struggled to find fair prices for the nuts due to middlemen interference. This prompted him to pursue agricultural economics at the university level because he wanted to desperately change the story of his parents and that of the many small holder macadamia farmers in Kenya. <br><br>
-               On the other hand, David, a long time production engineer was pushed by the need to establish a green culture in the manufacturing industry. He set out to find a solution to this through the use of macadamia shells as fuel, a venture that turned out successful and is close to his heart. <br>
+        $to = "macs@wildernutske.com";
+        // $from = "info@shabachgardens.com"; 
+        $subject = 'Message from Prime Group Limited'." , ";
+        $msg ="Name: ".$name." , "."Telephone: ".$telephone." , "." Subject: ".$subject."wrote the following: ".$message;
+        $headers ="From: ".$email;
+         if(mail($to,$subject,$msg,$headers)){
+            
+          echo "<b>Message Sent. Thank You $name for your message.<b>";
+}
 
-            </p>
+else {
+    echo "yolo";
+    
+}
+
+       
+
+
+    }
+    else
+    {
+        echo "try again";
+    }
+
+ ?></p>
           
-          </div>
-          <p style="text-align: justify;">
-           Lilian, having studied community development in school, understood well the great values that agri-economics bring to the communities and how these values greatly impacted women, given small holder farming is driven primarily by women in Kenya. Having worked with them in various fronts, she had the vision to one day create an avenue to which she could further their empowerment.<br><br>
-
-               It is from these three different backgrounds and dreams that Wildernuts Ltd was established. Our key driving factors are Creation, Innovation, Service, job creation, women empowerment, quality, fair trade, social impact and environmental conservation.
-          </p>
         </div>
 
       </div>
@@ -110,11 +123,9 @@
 
    
 
-
-   
-
   </main><!-- End #main -->
 
+  <!-- ======= Footer ======= -->
   <footer id="footer">
     <div class="footer-top">
       <div class="container">
@@ -179,7 +190,6 @@
         &copy; Copyright <strong><span>Wildernuts Limited</span></strong>. All Rights Reserved
       </div>
       <div class="credits">
-       
         Developed by <a href="https://softwaretechn.co.ke">Software Technology Kenya</a>
       </div>
     </div>

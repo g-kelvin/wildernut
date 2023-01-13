@@ -1,6 +1,1 @@
-Thanks for downloading this template!
-
-Template Name: Sailor
-Template URL: https://bootstrapmade.com/sailor-free-bootstrap-theme/
-Author: BootstrapMade.com
-License: https://bootstrapmade.com/license/
+Developed / Designed by Software Technology Kenya. For more information contact www.softwaretechn.co.ke
