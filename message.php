@@ -156,7 +156,7 @@ else {
               <li><i class="bx bx-chevron-right"></i> <a href="index.html">Home</a></li>
               <li><i class="bx bx-chevron-right"></i> <a href="about.html">About us</a></li>
               <li><i class="bx bx-chevron-right"></i> <a href="factory.html">Our Factory</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="buyersguide.html">Buyers Guide</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="buyersguide.html">Buyer's Guide</a></li>
               <li><i class="bx bx-chevron-right"></i> <a href="contact.html">Contact Us</a></li>
             </ul>
           </div>
