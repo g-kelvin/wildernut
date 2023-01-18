@@ -31,7 +31,7 @@
 
 </head>
 
-<body style="background-image: url('assets/img/doc.png'); background-repeat: no-repeat;   background-attachment: fixed;   background-size: cover;">
+<body style="background-image: url('assets/img/doc.png'); background-repeat: no-repeat;   background-attachment: fixed;   background-size: cover; font-family: sans-serif;">
 
   <!-- ======= Header ======= -->
   <header id="header" class="fixed-top d-flex align-items-center">
@@ -57,7 +57,7 @@
               <li><a href="factory.html">Our Factory</a></li>
             </ul>
           </li>
-          <li><a href="buyersguide.html">Buyers Guide</a></li>
+          <li><a href="buyersguide.html">Buyer's Guide</a></li>
           <li><a href="contact.html">Contact</a></li>
         </ul>
         <i class="bi bi-list mobile-nav-toggle"></i>
